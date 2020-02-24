@@ -6,9 +6,9 @@ add_subdirectory(example)
 install(
     TARGETS tinyfiledialogs
     EXPORT tinyfiledialogsConfig
-    ARCHIVE DESTINATION bin
+    ARCHIVE DESTINATION lib
     LIBRARY DESTINATION lib
-    RUNTIME DESTINATION lib
+    RUNTIME DESTINATION bin
 )
 install(
     FILES tinyfiledialogs.h
