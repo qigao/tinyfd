@@ -2,13 +2,13 @@ cmake_minimum_required(VERSION 3.4)
 project(tinyfiledialogs C)
 
 add_library(tinyfiledialogs tinyfiledialogs.c)
-
+add_subdirectory(example)
 install(
     TARGETS tinyfiledialogs
     EXPORT tinyfiledialogsConfig
-    ARCHIVE DESTINATION "${CMAKE_INSTALL_LIBDIR}"
-    LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}"
-    RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+    ARCHIVE DESTINATION bin
+    LIBRARY DESTINATION lib
+    RUNTIME DESTINATION lib
 )
 install(
     FILES tinyfiledialogs.h
